@@ -1,0 +1,115 @@
+%YAML 1.1
+---
+actions:
+- utter_bonjour
+- utter_TypesAbsence
+- utter_congépayé
+- utter_EvenementsFamiliaux
+- utter_ArrêtMaladie
+- utter_DemandeCongé
+- utter_DossierMaladie
+- utter_CentresVacance
+- utter_TypeAssurence
+- utter_AssurenceMPBP
+- utter_AssuranceAMC
+- utter_default
+config:
+  store_entities_as_slots: true
+entities: []
+forms: []
+intents:
+- bonjour:
+    use_entities: true
+- TypesAbsence:
+    use_entities: true
+- congépayé:
+    use_entities: true
+- EvenementsFamiliaux:
+    use_entities: true
+- ArrêtMaladie:
+    use_entities: true
+- DemandeCongé:
+    use_entities: true
+- DossierMaladie:
+    use_entities: true
+- CentresVacance:
+    use_entities: true
+- TypeAssurence:
+    use_entities: true
+- AssurenceMPBP:
+    use_entities: true
+- AssuranceAMC:
+    use_entities: true
+- Default:
+    use_entities: true
+slots: {}
+templates:
+  utter_ArrêtMaladie:
+  - text: En cas de maladie, le collaborateur doit présenter, au-delà de 3 jours d'absence,
+      un certificat médical à son employeur. Si l'absence se prolonge plus de 4 jours,
+      le collaborateur doit faire connaître à l'employeur la durée probable de son
+      absence et lui fournir, sauf en cas d'empêchement, un certificat médical justifiant
+      son absence.
+  utter_AssuranceAMC:
+  - text: "L’AMC entre en jeu dès épuisement du plafond de la MPBP qui est de 35.000,00\
+      \ DH. Elle couvre tous les frais résultant de maladies ou accidents (hors accidents\
+      \ du travail) à concurrence de 1.000.000,00, par an, sous réserve des exclusions\
+      \ prévues par le contrat.\n Cette assurance est facultative pour les conjoints\
+      \ et les enfants couverts par la MPBP. Les conjoints qui bénéficient du 2ème\
+      \ rang, peuvent bénéficier de la couverture de l’AMC dès épuisement du plafond\
+      \ de leur assurance et celui de la MPBP."
+  utter_AssurenceMPBP:
+  - text: "Est dite bénéficiaire, toute personne ayant été régulièrement déclaré comme\
+      \ faisant partie de la cellule familiale de l’adhérent à savoir:\n - Conjoint\
+      \ remboursé en 2ème rang s’il est assuré ailleurs.\n - Enfants moins de 21 ans\
+      \ légaux  ou adoptés admis par la sécurité sociale (CNSS).\n - Enfants âgés\
+      \ entre 21 et 25 ans justifiant de la poursuite de leurs étude, Enfants handicapés\
+      \ sans limite d’âge.\n - Le conjoint exerçant une profession libérale et ne\
+      \ possède pas de couverture médicale ailleurs, ne peut prétendre aux remboursement\
+      \ MPBP en premier rang que si l’agent accepte de payer une cotisation forfaitaire\
+      \ supplémentaire de 500 dhs/mois totalement à la charge de l’adhérent.\n - Le\
+      \ Conjoint sans activité (une attestation annuelle de non activités délivrée\
+      \ par les autorités locales à adresser à la MPBP)."
+  utter_CentresVacance:
+  - text: "La démarche à suivre en interne est la suivante.\n 1) Récupérer  la fiche\
+      \ de réservation auprès de l’administration RH en (7ème étage).\n  2) Remplir\
+      \ la fiche avec toutes les informations nécessaires (mentionner même le centre\
+      \ de vacance souhaité) et la remettre au 7ème étage ( le délai minimum est de\
+      \ 7 jours avant la date de départ pour la formulation de la demande ).\n 3)\
+      \ La RH s’occupe de transmettre ces fiches à la division « vie et œuvre sociale »\
+      \ au niveau de la BCP pour un retour dans les brefs délais.\n 4) Une fois l’accord\
+      \ transmis, la RH informe la personne concernée par cette réservation."
+  utter_DemandeCongé:
+  - text: Le collaborateur, établit au moins un mois avant son départ en congés payés,
+      une « Demande de congé » qui doit être validée par son manager responsable.
+      Une fois cette demande validée par le manager, elle doit être signée après par
+      le manager et le collaborateur concerné puis déposée au niveau de l’administration
+      RH (en 7ème étage). La demande sera traitée et une validation finale sera accordée
+      par la DRH selon le solde de congés restant.
+  utter_DossierMaladie:
+  - text: "Avant de se rendre chez le médecin, la démarche à suivre en interne est\
+      \ la suivante.\n 1) Récupérer la Déclaration de maladie (Mutuelle de prévoyance\
+      \ des banques populaires) auprès de l’administration RH en (7ème étage).\n 2)\
+      \ Renseigner et signer la partie « assuré » par le collaborateur.\n 3) Visite\
+      \ du médecin et renseignement de sa partie avec signature et cachet (obligatoire).\
+      \ Une partie doit impérativement être renseignée par le médecin."
+  utter_EvenementsFamiliaux:
+  - text: Le collaborateur bénéficie de permissions d’absence en cas d’événements
+      familiaux. La durée de ces absences est 2 à 4 jours en cas de mariage, et 2
+      à 3 jours en cas de décés.
+  utter_TypeAssurence:
+  - text: un collaborateur bénéficie de plusieurs types d'assurences à savoir, Mutuelle
+      de Prévoyance des Banques Populaires, Assurance Maladie Complémentaire, et Assurances
+      Incapacité Invalidité et Décès.
+  utter_TypesAbsence:
+  - text: "Il y a 5 types d'absences à savoir:\n - Le congé payé.\n - Evenements familiaux.\n\
+      \ - Maternité.\n - Paternité.\n - Arrêt maladie"
+  utter_bonjour:
+  - text: Bonjour, je suis votre assistant RH virtuel pour. Je suis disponible 24/7.
+      J'espère vous vous allez bien. Comment puis-je vous aider ?
+  utter_congépayé:
+  - text: Hormis le repos hebdomadaire samedi et dimanche, tous les collaborateurs
+      PCA (CDI + ANAPEC) ont droit à 1,5 jour ouvrable par mois de travail effectif,
+      soit un total de 18 jours ouvrables par an.
+  utter_default:
+  - text: Pardon, je n'ai pas compris. est ce que vous pouvez reformuler autrement?

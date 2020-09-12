@@ -1,0 +1,59 @@
+{
+  "action_fingerprints": {
+    "action_listen": {
+      "slots": []
+    },
+    "utter_DossierMaladie": {
+      "slots": []
+    },
+    "utter_TypeAssurence": {
+      "slots": []
+    },
+    "utter_cong\u00e9pay\u00e9": {
+      "slots": []
+    },
+    "utter_DemandeCong\u00e9": {
+      "slots": []
+    },
+    "utter_bonjour": {
+      "slots": []
+    },
+    "utter_CentresVacance": {
+      "slots": []
+    },
+    "utter_AssurenceMPBP": {
+      "slots": []
+    },
+    "utter_TypesAbsence": {
+      "slots": []
+    },
+    "utter_default": {
+      "slots": []
+    },
+    "utter_Arr\u00eatMaladie": {
+      "slots": []
+    },
+    "utter_AssuranceAMC": {
+      "slots": []
+    },
+    "utter_EvenementsFamiliaux": {
+      "slots": []
+    }
+  },
+  "python": "3.6.8",
+  "max_histories": [
+    10,
+    5,
+    null
+  ],
+  "ensemble_name": "rasa_core.policies.ensemble.SimplePolicyEnsemble",
+  "policy_names": [
+    "rasa_core.policies.memoization.MemoizationPolicy",
+    "rasa_core.policies.keras_policy.KerasPolicy",
+    "rasa_core.policies.fallback.FallbackPolicy"
+  ],
+  "trained_at": "20200911-102628",
+  "rasa_core": "0.14.5",
+  "tensorflow": "1.13.2",
+  "sklearn": "0.20.4"
+}

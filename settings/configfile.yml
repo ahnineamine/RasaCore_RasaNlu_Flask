@@ -1,0 +1,17 @@
+#########################
+# RASA CONFIG PATHS #
+#########################
+domain_file_path: './domain.yml'
+rasa_config: './config.yml'
+#########################
+# CORE PATHS #
+#########################
+core_model_path: './models/dialogue'
+training_core_data_path: './data/stories.md'
+#########################
+# NLU PATHS #
+#########################
+training_nlu_data_path: './data/nlu.md'
+default_nlu_model_path: './models/nlu/default/nlu_model'
+nlu_model_path: './models/nlu'
+nlu_model_name: 'nlu_model'

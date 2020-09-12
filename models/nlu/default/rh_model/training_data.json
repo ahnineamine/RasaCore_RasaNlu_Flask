@@ -1,0 +1,233 @@
+{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "intent": "bonjour",
+        "text": "Bonjour"
+      },
+      {
+        "intent": "bonjour",
+        "text": "Salut"
+      },
+      {
+        "intent": "bonjour",
+        "text": "bonsoir"
+      },
+      {
+        "intent": "bonjour",
+        "text": "Salut Bot"
+      },
+      {
+        "intent": "bonjour",
+        "text": "Hello"
+      },
+      {
+        "intent": "TypesAbsence",
+        "text": "quelles sont les types d'absences"
+      },
+      {
+        "intent": "TypesAbsence",
+        "text": "les absences possibles"
+      },
+      {
+        "intent": "TypesAbsence",
+        "text": "les types d'absences"
+      },
+      {
+        "intent": "TypesAbsence",
+        "text": "quelles sont les raisons pour s'absenter"
+      },
+      {
+        "intent": "TypesAbsence",
+        "text": "raisons d'absence"
+      },
+      {
+        "intent": "TypesAbsence",
+        "text": "en quels cas je peux m'absenter"
+      },
+      {
+        "intent": "TypesAbsence",
+        "text": "quand est ce que j'ai droit de m'absenter"
+      },
+      {
+        "intent": "TypesAbsence",
+        "text": "quelles sont les absences possibles"
+      },
+      {
+        "intent": "congépayé",
+        "text": "combien j'ai de congé payé par an"
+      },
+      {
+        "intent": "congépayé",
+        "text": "total de congé payé annuel"
+      },
+      {
+        "intent": "congépayé",
+        "text": "nombre de jours de congé par an"
+      },
+      {
+        "intent": "congépayé",
+        "text": "la durée total du congé annuel"
+      },
+      {
+        "intent": "EvenementsFamiliaux",
+        "text": "m'absenter en cas d'urgence familiale"
+      },
+      {
+        "intent": "EvenementsFamiliaux",
+        "text": "quelles sont les types d'Evenements familiaux où je peux m'absenter"
+      },
+      {
+        "intent": "EvenementsFamiliaux",
+        "text": "s'absenter en cas de décès"
+      },
+      {
+        "intent": "EvenementsFamiliaux",
+        "text": "m'absenter en cas de mariage"
+      },
+      {
+        "intent": "EvenementsFamiliaux",
+        "text": "combien de jours je peux m'absenter en cas de décès"
+      },
+      {
+        "intent": "ArrêtMaladie",
+        "text": "je peux reclamer combiens jours en cas de maladie"
+      },
+      {
+        "intent": "ArrêtMaladie",
+        "text": "presenter un certificat médical externe"
+      },
+      {
+        "intent": "ArrêtMaladie",
+        "text": "je ne peux pas me presenter au travail à cause de maladie"
+      },
+      {
+        "intent": "ArrêtMaladie",
+        "text": "Absence en cas de maladie"
+      },
+      {
+        "intent": "ArrêtMaladie",
+        "text": "j'ai tombé malade. ai je droit de m'absenter ?"
+      },
+      {
+        "intent": "DemandeCongé",
+        "text": "Comment déposer une demande congé"
+      },
+      {
+        "intent": "DemandeCongé",
+        "text": "Comment je peux demander un congé"
+      },
+      {
+        "intent": "DemandeCongé",
+        "text": "la démarche pour établir un congé"
+      },
+      {
+        "intent": "DemandeCongé",
+        "text": "je veux demander un congé"
+      },
+      {
+        "intent": "DossierMaladie",
+        "text": "la démarche de traitement et remboursement du dossier de maladie"
+      },
+      {
+        "intent": "DossierMaladie",
+        "text": "Démarche de dossier de maladie"
+      },
+      {
+        "intent": "DossierMaladie",
+        "text": "comment préparier mon dossier de maladie"
+      },
+      {
+        "intent": "DossierMaladie",
+        "text": "établir un dossier de maladie"
+      },
+      {
+        "intent": "CentresVacance",
+        "text": "Comment déposer une demande de réservation dans un centre de vacances"
+      },
+      {
+        "intent": "CentresVacance",
+        "text": "Comment je peux demander une réservation dans un centre de vacances"
+      },
+      {
+        "intent": "CentresVacance",
+        "text": "informations sur les centres de vacances"
+      },
+      {
+        "intent": "CentresVacance",
+        "text": "Quelle est la démarche à suivre pour réserver dans les centres de vacances"
+      },
+      {
+        "intent": "TypeAssurence",
+        "text": "quels sont les types d'assurences"
+      },
+      {
+        "intent": "TypeAssurence",
+        "text": "donne moi des informations sur les assurences"
+      },
+      {
+        "intent": "TypeAssurence",
+        "text": "quelles sont les assurances dont je peux bénéficier"
+      },
+      {
+        "intent": "TypeAssurence",
+        "text": "type d'assurances dont je bénéficie"
+      },
+      {
+        "intent": "TypeAssurence",
+        "text": "une idée sur les assurences disponibles"
+      },
+      {
+        "intent": "AssurenceMPBP",
+        "text": "informations sur la mutuelle BP"
+      },
+      {
+        "intent": "AssurenceMPBP",
+        "text": "réglementation sur la mutelle du banque populaire"
+      },
+      {
+        "intent": "AssurenceMPBP",
+        "text": "les membres de famille ayant droit à la mutuelle BP"
+      },
+      {
+        "intent": "AssurenceMPBP",
+        "text": "est ce que tu peux me donner des informations sur la mutuelle du banque populaire"
+      },
+      {
+        "intent": "AssuranceAMC",
+        "text": "informations sur l'assurence maladie Complémentaire"
+      },
+      {
+        "intent": "AssuranceAMC",
+        "text": "est ce que je peux avoir du details sur l'assurence maladie"
+      },
+      {
+        "intent": "AssuranceAMC",
+        "text": "assurence en cas de maladie"
+      },
+      {
+        "intent": "AssuranceAMC",
+        "text": "assurence AMC"
+      },
+      {
+        "intent": "Default",
+        "text": "azertyuiop"
+      },
+      {
+        "intent": "Default",
+        "text": "aqwzsxedcedc"
+      },
+      {
+        "intent": "Default",
+        "text": "i dont understand"
+      },
+      {
+        "intent": "Default",
+        "text": "pmolikuj"
+      }
+    ],
+    "regex_features": [],
+    "lookup_tables": [],
+    "entity_synonyms": []
+  }
+}
