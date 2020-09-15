@@ -16,6 +16,7 @@ RUN pip install --default-timeout=100 spacy==2.1.9
 RUN pip install https://github.com/explosion/spacy-models/releases/download/fr_core_news_md-2.1.0/fr_core_news_md-2.1.0.tar.gz && python3 -m spacy link fr_core_news_md fr
 
 ENV LANG C.UTF-8
+ENV FLASK_APP "app.py"
 
 WORKDIR /app
 COPY . /app
@@ -25,4 +26,5 @@ RUN pip3 install -r requirements.txt
 
 # Run main
 EXPOSE 5005
-CMD [ "python3","main.py" ]
+#CMD [ "python3","app.py" ]
+CMD ["flask", "run", "-h", "0.0.0.0", "-p", "5005"]

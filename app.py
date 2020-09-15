@@ -30,12 +30,14 @@ cs.build_core()
 logging.info("CORE model runs successfuly")
 
 ##################### Build API ##############################
-@app.route("/conversations/default/respond",methods=['POST'])
+#@app.route("/conversations/default/respond",methods=['POST'])
+@app.route("/",methods=['POST'])
 def run_hr_bot():
     # calling rasa agent
     agent = cs.agent
     ## Collect Query from POST request
     data = request.get_json(force=True)
+    print(data)
     ## Send Query to Agent
     responses=agent.handle_text(data)
     ## Get Response of BOT
@@ -43,8 +45,8 @@ def run_hr_bot():
         return jsonify(response['text'])
 
 if __name__ == '__main__':
-    port = int(os.environ.get("PORT", 5005))
-    app.run('0.0.0.0',port=port,debug=True)
+    #port = int(os.environ.get("PORT", 5005))
+    app.run(host='0.0.0.0',port=5005,debug=True)
 """
 @app.route('/',methods=['POST'])
 def respond():

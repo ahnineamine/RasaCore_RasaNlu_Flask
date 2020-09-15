@@ -52,7 +52,7 @@
     "rasa_core.policies.keras_policy.KerasPolicy",
     "rasa_core.policies.fallback.FallbackPolicy"
   ],
-  "trained_at": "20200911-102628",
+  "trained_at": "20200914-171450",
   "rasa_core": "0.14.5",
   "tensorflow": "1.13.2",
   "sklearn": "0.20.4"

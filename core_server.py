@@ -25,7 +25,7 @@ class CoreServer():
 	def train_dialogue(self, domain_file, model_path, training_data_file):
 		fallback = FallbackPolicy(fallback_action_name="utter_default",core_threshold=0.2, nlu_threshold=0.7)
 		featurizer = MaxHistoryTrackerFeaturizer(BinarySingleStateFeaturizer(), max_history=10)
-		self.agent = Agent(domain_file , policies=[MemoizationPolicy(max_history=10), KerasPolicy(epochs = 200, batch_size = 50, validation_split = 0.2), fallback])
+		self.agent = Agent(domain_file , policies=[MemoizationPolicy(max_history=10), KerasPolicy(epochs = 150, batch_size = 50, validation_split = 0.2), fallback])
 		data = self.agent.load_data(training_data_file)
 		self.agent.train(data)
 		self.agent.persist(model_path)
