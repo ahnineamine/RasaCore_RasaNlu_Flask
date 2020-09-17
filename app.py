@@ -7,8 +7,10 @@ import os
 from flask import Flask
 from flask import request, jsonify
 from flask_restful import Resource, Api
+from flask_cors import CORS, cross_origin
 
 app = Flask(__name__)
+CORS(app)
 api = Api(app)
 
 
@@ -31,7 +33,8 @@ logging.info("CORE model runs successfuly")
 
 ##################### Build API ##############################
 #@app.route("/conversations/default/respond",methods=['POST'])
-@app.route("/",methods=['POST'])
+@app.route("/response/default/conversations",methods=['POST'])
+@cross_origin()
 def run_hr_bot():
     # calling rasa agent
     agent = cs.agent
@@ -41,8 +44,9 @@ def run_hr_bot():
     ## Send Query to Agent
     responses=agent.handle_text(data)
     ## Get Response of BOT
-    for response in responses:
-        return jsonify(response['text'])
+    #for response in responses:
+        #return jsonify(response['text'])
+    return jsonify(responses)
 
 if __name__ == '__main__':
     #port = int(os.environ.get("PORT", 5005))
