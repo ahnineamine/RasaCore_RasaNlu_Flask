@@ -3,14 +3,14 @@ language: "fr"  # your two-letter language code
 #pipeline: "spacy_sklearn"
 
 pipeline:
-- name: "nlp_spacy"
-- name: "tokenizer_spacy"
-- name: "intent_featurizer_count_vectors"
-- name: "intent_classifier_tensorflow_embedding"
-- name: "ner_crf"
+- name: "SpacyNLP"
+- name: "SpacyTokenizer"
+- name: "CountVectorsFeaturizer"
+- name: "EmbeddingIntentClassifier"
+- name: "CRFEntityExtractor"
 #- name: "ner_synonyms"
   #intent_tokenization_flag: true
-  #intent_split_symbol: "+" 
+  #intent_split_symbol: "+"
 
 # Configuration for Rasa Core.
 # https://rasa.com/docs/rasa/core/policies/
