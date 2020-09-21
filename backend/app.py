@@ -51,16 +51,3 @@ def run_hr_bot():
 if __name__ == '__main__':
     #port = int(os.environ.get("PORT", 5005))
     app.run(host='0.0.0.0',port=5005,debug=True)
-"""
-@app.route('/',methods=['POST'])
-def respond():
-    data = request.get_json()
-
-
-    #return jsonify(L_input)
-    return jsonify()
-
-if __name__ == '__main__':
-   port = int(os.environ.get("PORT", 5000))
-   app.run(host='0.0.0.0', port=port, debug=True)
-"""
