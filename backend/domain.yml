@@ -11,7 +11,7 @@ intents:
 - DemandeCongé
 - DossierMaladie
 - CentresVacance
-- TypeAssurence
+- TypeAssurance
 - AssuranceMPBP
 - AssuranceAMC
 - Default
