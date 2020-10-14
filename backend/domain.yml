@@ -12,7 +12,7 @@ intents:
 - DossierMaladie
 - CentresVacance
 - TypeAssurence
-- AssurenceMPBP
+- AssuranceMPBP
 - AssuranceAMC
 - Default
 
@@ -60,11 +60,11 @@ templates:
       ces fiches à la division « vie et œuvre sociale » au niveau de la BCP pour un
       retour dans les brefs délais.\n <br> 4) Une fois l’accord transmis, la RH informe la
       personne concernée par cette réservation."
-  utter_TypeAssurence:
-  - text: un collaborateur bénéficie de plusieurs types d'assurences à savoir, Mutuelle
+  utter_TypeAssurance:
+  - text: un collaborateur bénéficie de plusieurs types d'assurances à savoir, Mutuelle
       de Prévoyance des Banques Populaires, Assurance Maladie Complémentaire, et Assurances
       Incapacité Invalidité et Décès.
-  utter_AssurenceMPBP:
+  utter_AssuranceMPBP:
   - text: "Est dite bénéficiaire, toute personne ayant été régulièrement déclaré comme
       faisant partie de la cellule familiale de l’adhérent à savoir:\n <br> - Conjoint remboursé
       en 2ème rang s’il est assuré ailleurs.\n <br> - Enfants moins de 21 ans légaux  ou adoptés
@@ -95,7 +95,7 @@ actions:
 - utter_DemandeCongé
 - utter_DossierMaladie
 - utter_CentresVacance
-- utter_TypeAssurence
-- utter_AssurenceMPBP
+- utter_TypeAssurance
+- utter_AssuranceMPBP
 - utter_AssuranceAMC
 - utter_default
