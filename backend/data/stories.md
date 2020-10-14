@@ -1,8 +1,8 @@
-## bonjour 
+## bonjour
 * bonjour
   - utter_bonjour
 
-## TypesAbsence 
+## TypesAbsence
 * TypesAbsence
   - utter_TypesAbsence
 
@@ -10,11 +10,11 @@
 * congépayé
   - utter_congépayé
 
-## EvenementsFamiliaux 
+## EvenementsFamiliaux
 * EvenementsFamiliaux
   - utter_EvenementsFamiliaux
 
-## ArrêtMaladie 
+## ArrêtMaladie
 * ArrêtMaladie
   - utter_ArrêtMaladie
 
@@ -30,13 +30,13 @@
 * CentresVacance
   - utter_CentresVacance
 
-## TypeAssurence
-* TypeAssurence
-  - utter_TypeAssurence
+## TypeAssurance
+* TypeAssurance
+  - utter_TypeAssurance
 
-## AbsenceAssurenceMPBP
-* AssurenceMPBP
-  - utter_AssurenceMPBP
+## AbsenceAssuranceMPBP
+* AssuranceMPBP
+  - utter_AssuranceMPBP
 
 ## AssuranceAMC
 * AssuranceAMC
