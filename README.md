@@ -4,7 +4,7 @@ Chatbot based on Rasa Core, Rasa NLU, and Flask.
 # About
 This is a Chatbot build using Rasa NLU and Rasa Core, as they allow for better control over the NLU and NLG tensorflow models, and flexiblity of the overall pipeline.  
 The backend of the bot is deployed as a Flask Rest API and communicates with a simple widget, as a frontend, via fetch http requests. Furthermore, Nginx is utilized as Load Balancer.  
-The following the overall architecture of the chatbot:  
+The following illustrates the overall architecture of the chatbot:  
 ![alt text](https://github.com/ahnineamine/RasaCore_RasaNlu_Flask/blob/master/architecture.png?raw=true)  
   
 The current satuts of the chatbot as it is, allow for a FAQ or Q&A with the user, which brings me to my next point ->  
