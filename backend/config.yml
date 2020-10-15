@@ -3,11 +3,23 @@ language: "fr"  # your two-letter language code
 #pipeline: "spacy_sklearn"
 
 pipeline:
-- name: "SpacyNLP"
-- name: "SpacyTokenizer"
-- name: "CountVectorsFeaturizer"
-- name: "EmbeddingIntentClassifier"
-- name: "CRFEntityExtractor"
+- name: "spellchecking.CorrectSpelling"
+- name: SpacyNLP
+- name: SpacyTokenizer
+- name: SpacyFeaturizer
+- name: RegexFeaturizer
+- name: CRFEntityExtractor
+- name: CountVectorsFeaturizer
+- name: CountVectorsFeaturizer
+  analyzer: "char_wb"
+  min_ngram: 1
+  max_ngram: 4
+- name: EmbeddingIntentClassifier
+  epochs: 150
+- name: EntitySynonymMapper
+#- name: ResponseSelector
+#  use_text_as_label: true
+#  epochs: 100
 #- name: "ner_synonyms"
   #intent_tokenization_flag: true
   #intent_split_symbol: "+"

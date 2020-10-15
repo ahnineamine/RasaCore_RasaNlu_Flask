@@ -1,9 +1,11 @@
 ## intent:bonjour
 - Bonjour
 - Salut
+- salit
 - bonsoir
 - Salut Bot
 - Hello
+- slt
 
 ## intent:TypesAbsence
 - quelles sont les types d'absences
@@ -53,24 +55,32 @@
 - informations sur les centres de vacances
 - Quelle est la démarche à suivre pour réserver dans les centres de vacances
 
-## intent:TypeAssurence
-- quels sont les types d'assurences
-- donne moi des informations sur les assurences
+## intent:TypeAssurance
+- quels sont les types d'assurances
+- donne moi des informations sur les assurances
 - quelles sont les assurances dont je peux bénéficier
-- type d'assurances dont je bénéficie
-- une idée sur les assurences disponibles
-- est ce que je suis assuré 
+- types assurances dont je bénéficie
+- une idée sur les assurances disponibles
+- est ce que je suis assuré
+- types assurances
+- types assurences
+- les assurences
 
-## intent:AssurenceMPBP
+
+## intent:AssuranceMPBP
 - informations sur la mutuelle BP
 - réglementation sur la mutelle du banque populaire
 - les membres de famille ayant droit à la mutuelle BP
 - est ce que tu peux me donner des informations sur la mutuelle du banque populaire
+- assurance MPBP
+- assurence MPBP
+
 
 ## intent:AssuranceAMC
-- informations sur l'assurence maladie Complémentaire
-- est ce que je peux avoir du details sur l'assurence maladie
-- assurence en cas de maladie
+- informations sur assurance maladie Complémentaire
+- est ce que je peux avoir du details sur l'assurance maladie
+- assurance en cas de maladie
+- assurance AMC
 - assurence AMC
 
 ## intent:Default

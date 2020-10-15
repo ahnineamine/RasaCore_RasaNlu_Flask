@@ -21,6 +21,9 @@ ENV FLASK_APP "app.py"
 WORKDIR /app
 COPY . /app
 
+# Set Pythonpath
+ENV PYTHONPATH="$PYTHONPATH:/app/backend"
+
 # Install dependencies
 RUN pip3 install -r requirements.txt
 

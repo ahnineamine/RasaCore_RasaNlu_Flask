@@ -139,7 +139,7 @@ function scrollToBottomOfResults() {
 //============== send the user message to rasa server =============================================
 function send(message) {
 	//var url = document.location.protocol + "//" + document.location.hostname;
-	fetch("http://52.15.167.47:5005/response/default/conversations",{
+	fetch("http://localhost:5005/response/default/conversations",{
     method: "POST",
 		headers: {
       'Accept': 'application/json',
