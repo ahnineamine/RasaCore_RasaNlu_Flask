@@ -5,7 +5,7 @@ Chatbot based on Rasa Core, Rasa NLU, and Flask.
 This is a Chatbot build using Rasa NLU and Rasa Core, as they allow for better control over the NLU and NLG tensorflow models, and flexiblity of the overall pipeline.  
 The backend of the bot is deployed as a Flask Rest API and communicates with a simple widget, as a frontend, via fetch http requests. Furthermore, Nginx is utilized as Load Balancer.  
 The following the overall architecture of the chatbot:  
-![alt text](https://github.com/ahnineamine/RasaCore_RasaNlu_Flask/architecture.png?raw=true)  
+![alt text](https://github.com/ahnineamine/RasaCore_RasaNlu_Flask/blob/master/architecture.png?raw=true)  
   
 The current satuts of the chatbot as it is, allow for a FAQ or Q&A with the user, which brings me to my next point ->  
 As customizing the chatbot requires a knowledge of how RASA works.  
@@ -22,10 +22,10 @@ the following features are modifiable/customizable/adjustable:
 
 # How to:  
 the chatbot is deployed through a docker compose  
-''' docker-compose up --build '''  
+``` docker-compose up --build ```  
 It's accessible via port 80. The latter is modifiable through the Nginx service configuration in the the docker compose.  
 The Flask API is reachable via the following endpoint  
-''' http://0.0.0.0:5005/response/default/conversations '''  
+``` http://0.0.0.0:5005/response/default/conversations ```  
 by sending a json file of the following format  
-''' {"text": "salut"} '''
+``` {"text": "salut"} ```
 
