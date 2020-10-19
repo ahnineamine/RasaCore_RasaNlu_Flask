@@ -22,6 +22,7 @@
 - total de congé payé annuel
 - nombre de jours de congé par an
 - la durée total du congé annuel
+- solde des congés
 
 ## intent:EvenementsFamiliaux
 - m'absenter en cas d'urgence familiale
