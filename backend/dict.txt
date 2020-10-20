@@ -6,6 +6,8 @@ bonsoir
 Salut Bot
 Hello
 slt
+coucou
+salam
 
 quelles sont les types d'absences
 les absences possibles les types d'absences

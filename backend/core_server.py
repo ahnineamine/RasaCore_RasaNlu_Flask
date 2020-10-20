@@ -23,7 +23,7 @@ class CoreServer():
 
 
 	def train_dialogue(self, domain_file, model_path, training_data_file):
-		fallback = FallbackPolicy(fallback_action_name="utter_default",core_threshold=0.2, nlu_threshold=0.3)
+		fallback = FallbackPolicy(fallback_action_name="utter_default",core_threshold=0.2, nlu_threshold=0.5)
 		featurizer = MaxHistoryTrackerFeaturizer(BinarySingleStateFeaturizer(), max_history=10)
 		self.agent = Agent(domain_file , policies=[MemoizationPolicy(max_history=10), KerasPolicy(epochs = 90, batch_size = 20, validation_split = 0.1), fallback])
 		data = self.agent.load_data(training_data_file)

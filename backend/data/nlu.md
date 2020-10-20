@@ -6,6 +6,8 @@
 - Salut Bot
 - Hello
 - slt
+- coucou
+- salam
 
 ## intent:TypesAbsence
 - quelles sont les types d'absences
